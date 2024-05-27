@@ -3,32 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/Elegantthemes-Beautiful-Flat-One-Color-Dev.32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/icomoon/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Jose Meurer - Web Profile</title>
   </head>
   <body>
-    <main>
-      <form action="" class=" base-form">
-        <fieldset class="base-fieldset">
-          <legend class="base-legend">Login</legend>
-
-          <label class="base-label" for="user">Usuário</label>
-          <input class="base-input" type="text" name="user" id="user" required minlength="3"/>
-
-          <label class="base-label" for="password">Senha</label>
-          <input class="base-input" type="password" name="password" id="password" required minlength="8"/>
-        </fieldset>
-
-        <div class="buttonsWrapper">
-            <!-- Poderia por uma classe com margin-right no regiter, mas achei mais facil usar 2 divs e display flex -->
-          <div class="loginRegisterWrapper">
-            <input class="submit-btn" type="submit" value="Login" />
-            <a class="login__register" href="register.html">Cadastre-se</a>
-          </div> 
-          <a class="form-link" href="reset-password.html">Esqueci minha senha</a>
+    <!-- Inicio Header -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <p>Uma Imagem</p>
+          <!-- adicionar imagem svg -->
         </div>
-      </form>
-    </main>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#">Sobre</a></li>
+            <li class="header__item"><a href="#">Habilidades</a></li>
+            <li class="header__item"><a href="#">Projetos</a></li>
+            <li class="header__item"><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Fim Header -->
+    <section class="about">
+      <div class="container about__container">
+        <div class="about__card">
+          <span class="about__firstName">José</span>
+          <span class="about__lastName">Meurer</span>
+          <p class="about__description">Desenvolvedor Back End</p>
+          <div class="about__social">
+            <a href="/assets/download/JoseMeurer.pdf" target="_blank"
+              >Curriculum<i class="icon-folder-download"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jose-meurer/" target="_blank"
+              >LinkedIn<i class="icon-linkedin"></i
+            ></a>
+            <a href="https://github.com/jose-meurer" target="_blank"
+              >Github<i class="icon-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="about_img">
+          <div>
+            <img src="https://placehold.co/400x400" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>
+          ©2024 Desenvolvido por
+          <a href="https://github.com/jose-meurer/" target="_blank">JoseMeurer</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
