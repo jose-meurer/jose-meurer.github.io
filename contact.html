@@ -13,7 +13,6 @@
     />
 
     <link rel="shortcut icon" href="/assets/favicon/favicon-dev-32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/icomoon/style.css" />
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/style-media.css" />
@@ -29,35 +28,42 @@
         </div>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a href="#">Sobre</a></li>
+            <li class="header__item"><a href="index.html">Sobre</a></li>
             <li class="header__item"><a href="#">Habilidades</a></li>
             <li class="header__item"><a href="#">Projetos</a></li>
-            <li class="header__item"><a href="contact.html">Contato</a></li>
+            <li class="header__item"><a href="#">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- Fim Header -->
-    <section class="about">
-      <div class="container about__container">
-        <div class="about__card">
-          <span class="about__firstName">José</span>
-          <span class="about__lastName">Meurer</span>
-          <p class="about__description">Desenvolvedor Back End</p>
-          <div class="about__social">
-            <a href="/assets/download/JoseMeurer.pdf" target="_blank"
-              >Curriculum<i class="icon-folder-download"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/jose-meurer/" target="_blank"
-              >LinkedIn<i class="icon-linkedin"></i
-            ></a>
-            <a href="https://github.com/jose-meurer" target="_blank"
-              >Github<i class="icon-github"></i
-            ></a>
-          </div>
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__img">
+          <img src="assets/img/BlueMail-256.png" alt="Imagem de Email" />
         </div>
-        <div class="about__img">
-          <img src="/assets/img/gumball.png" alt="Personagem de Gumball" />
+        <div>
+          <p class="contact__description">Email para contato:</p>
+          <div class="contact__wrapperEmail">
+            <address id="email" class="contact__email">josewmeurer@gmail.com</address>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="icon-sm"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -69,5 +75,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/clipboardEmail.js"></script>
   </body>
 </html>
