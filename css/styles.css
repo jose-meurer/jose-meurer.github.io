@@ -1,0 +1,133 @@
+:root {
+  --font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+
+  --color-background: #020817;
+  --color-background-button: #020817;
+  --colot-background-hover-button: #1e293b;
+
+  --color-text-highlight: #60a5fa;
+  --color-text-description: #94a3b8;
+  --color-text-primary: #f8fafc;
+
+  --color-border-card: #1e293b;
+
+  --grandient-from: #1e293b;
+  --gradient-to: #020817;
+}
+
+.mclaren-regular {
+  font-family: "McLaren", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  min-height: 100svh;
+
+  background-color: var(--color-background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.marginb--16 {
+  margin-bottom: 16px;
+}
+
+.marginb--20 {
+  margin-bottom: 20px;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.heroBanner {
+  height: 100svh;
+
+  display: flex;
+  align-items: center;
+
+  background-image: linear-gradient(to bottom, var(--grandient-from), var(--gradient-to));
+}
+
+.heroBanner > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.heroBanner__card {
+  text-align: center;
+}
+
+.heroBanner__title {
+  font-size: 7rem;
+  color: var(--color-text-highlight);
+}
+
+.heroBanner__description {
+  font-size: 3rem;
+  color: var(--color-text-description);
+}
+
+.heroBanner__socials {
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heroBanner__link {
+  font-size: 1.4rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-background-button);
+  padding: 10px 32px;
+
+  border-radius: 6px;
+  border: 1px solid var(--color-border-card);
+}
+
+.heroBanner__link:hover {
+  background-color: var(--colot-background-hover-button);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
